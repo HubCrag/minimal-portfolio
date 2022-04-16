@@ -1,0 +1,34 @@
+.projects {
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 48px;
+    &:nth-child(even) {
+        flex-flow: row-reverse;
+    }
+    @include a {
+        flex-flow: column-reverse!important;
+    }
+    &-data {
+        flex-basis: 50%;
+        .title {
+            font-weight: 700;
+            font-size: 40px;
+            margin-bottom: 24px;
+          }
+          .info {
+            font-weight: 400;
+            font-size: 16px;
+            margin-bottom: 56px;
+          }
+    }
+    &-img {
+        flex-basis: 50%;
+        max-width: 450px;
+        width: 100%;
+        img {
+            width: 100%;
+        }
+    }
+  }
+}

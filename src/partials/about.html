@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  @include('_includes/head.html', { 'title': 'Hello', 'description': 'Home Page'
+  })
+  <body>
+    <div class="wrapper">
+      @include('_includes/header.html')
+      <main class="main">
+        <section class="headerline">
+          <div class="container container__inner">
+            <h1 class="title">
+              About Me
+              <svg class="icon icon-emoji">
+                <use xlink:href="svg/sprite.svg#Face"></use>
+              </svg>
+            </h1>
+            <p class="subtitle">
+              A brief intro to who i am and how i do what i do:
+            </p>
+          </div>
+        </section>
+        @include('part/s-about.html')
+      </main>
+      <div class="bg-circle"><span></span><span></span><span></span></div>
+    </div>
+
+    @include('_includes/scripts.html')
+  </body>
+</html>
